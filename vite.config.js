@@ -8,12 +8,7 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: "assets",
     sourcemap: false,
-    minify: "terser",
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
+    minify: "esbuild", // Use esbuild instead of terser (no extra dependencies)
   },
   base: "./", // Ensures assets work in any hosting environment
 });
