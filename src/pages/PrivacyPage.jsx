@@ -159,8 +159,8 @@ export default function PrivacyPage() {
               <div className="contact-info">
                 <p>
                   <strong>Email:</strong>{" "}
-                  <a href="mailto:admin@digitalplatform.online">
-                    admin@digitalplatform.online
+                  <a href="mailto:digitalplatformonline@outlook.com">
+                    digitalplatformonline@outlook.com
                   </a>
                 </p>
                 <p>

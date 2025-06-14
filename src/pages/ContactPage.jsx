@@ -52,8 +52,8 @@ export default function ContactPage() {
                   <div className="method-icon">📧</div>
                   <div className="method-details">
                     <h3>Email Us</h3>
-                    <a href="mailto:contact@digitalplatform.online">
-                      contact@digitalplatform.online
+                    <a href="mailto:digitalplatformonline@outlook.com">
+                      digitalplatformonline@outlook.com
                     </a>
                   </div>
                 </div>
