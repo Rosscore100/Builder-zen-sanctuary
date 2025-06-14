@@ -1,0 +1,177 @@
+.resources-page {
+  .resources-hero {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .page-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #333;
+      margin: 0 0 16px 0;
+    }
+
+    .page-subtitle {
+      font-size: 20px;
+      color: #666;
+      margin: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .resources-content {
+    padding: 80px 0;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      margin-bottom: 80px;
+
+      .resource-category {
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 12px;
+        padding: 32px;
+
+        .category-title {
+          font-size: 24px;
+          font-weight: 700;
+          color: #333;
+          margin: 0 0 24px 0;
+          border-bottom: 2px solid #0000ee;
+          padding-bottom: 12px;
+        }
+
+        .resource-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 0;
+            border-bottom: 1px solid #f0f0f0;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .resource-icon {
+              font-size: 20px;
+              min-width: 24px;
+            }
+
+            .resource-name {
+              flex: 1;
+              font-size: 16px;
+              color: #333;
+            }
+
+            .download-btn {
+              background: #0000ee;
+              color: white;
+              border: none;
+              padding: 8px 16px;
+              border-radius: 6px;
+              font-size: 14px;
+              font-weight: 600;
+              cursor: pointer;
+              transition: background 0.2s ease;
+
+              &:hover {
+                background: #0000cc;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .cta-section {
+      text-align: center;
+      background: #f8f9fa;
+      padding: 60px 40px;
+      border-radius: 12px;
+
+      h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+        margin: 0 0 16px 0;
+      }
+
+      p {
+        font-size: 18px;
+        color: #666;
+        margin: 0 0 32px 0;
+        max-width: 500px;
+        margin: 0 auto 32px auto;
+      }
+
+      .cta-button {
+        background: #0000ee;
+        color: white;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: #0000cc;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .resources-hero {
+      padding: 100px 0 40px;
+
+      .page-title {
+        font-size: 36px;
+      }
+
+      .page-subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .resources-content {
+      padding: 60px 0;
+
+      .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+
+        .resource-category {
+          padding: 24px;
+        }
+      }
+
+      .cta-section {
+        padding: 40px 20px;
+      }
+    }
+  }
+}

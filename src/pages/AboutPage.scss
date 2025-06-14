@@ -1,0 +1,121 @@
+.about-page {
+  .about-hero {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .page-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #333;
+      margin: 0 0 16px 0;
+    }
+
+    .page-subtitle {
+      font-size: 20px;
+      color: #666;
+      margin: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .about-content {
+    padding: 80px 0;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+
+      .content-section {
+        h2 {
+          font-size: 24px;
+          font-weight: 700;
+          color: #333;
+          margin: 0 0 16px 0;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #666;
+          margin: 0;
+        }
+
+        .feature-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            padding: 8px 0;
+            font-size: 16px;
+            color: #555;
+          }
+        }
+
+        .stats-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+
+          .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+
+            .stat-number {
+              font-size: 32px;
+              font-weight: 700;
+              color: #0000ee;
+              margin-bottom: 8px;
+            }
+
+            .stat-label {
+              font-size: 14px;
+              color: #666;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 100px 0 40px;
+
+      .page-title {
+        font-size: 36px;
+      }
+
+      .page-subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .about-content {
+      padding: 60px 0;
+
+      .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  }
+}
