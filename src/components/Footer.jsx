@@ -76,11 +76,11 @@ export default function Footer() {
             <h4 className="section-title">Contact Us</h4>
             <div className="contact-details">
               <a
-                href="mailto:contact@digitalplatform.online"
+                href="mailto:admin@digitalplatform.online"
                 className="contact-link email-link"
               >
                 <span className="contact-icon">📧</span>
-                contact@digitalplatform.online
+                admin@digitalplatform.online
               </a>
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
