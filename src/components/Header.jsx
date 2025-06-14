@@ -23,18 +23,7 @@ export default function Header() {
       <div className="header-container">
         <div className="header-brand">
           <Link to="/" className="logo-link">
-            <img
-              src="/logo.png"
-              alt="Digital Platform"
-              className="logo-image"
-              onError={(e) => {
-                e.target.style.display = "none";
-                e.target.nextSibling.style.display = "block";
-              }}
-            />
-            <span className="logo-text" style={{ display: "none" }}>
-              Digital Platform
-            </span>
+            <span className="logo-text">Digital Platform</span>
           </Link>
         </div>
 

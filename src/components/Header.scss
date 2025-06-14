@@ -27,14 +27,14 @@
       font-weight: 700;
       font-size: 24px;
 
-      .logo-image {
-        height: 40px;
-        width: auto;
-        margin-right: 12px;
-      }
-
       .logo-text {
         color: #333;
+        background: linear-gradient(135deg, #0000ee 0%, #4c6ef5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 26px;
+        font-weight: 800;
       }
     }
   }
