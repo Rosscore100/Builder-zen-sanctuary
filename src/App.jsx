@@ -9,6 +9,8 @@ import ContactPage from "./pages/ContactPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import PodcastsPage from "./pages/PodcastsPage";
+import LeadMagnetPage from "./pages/LeadMagnetPage";
+import CourseDetailPage from "./pages/CourseDetailPage";
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/podcasts" element={<PodcastsPage />} />
+        <Route path="/lead-magnet" element={<LeadMagnetPage />} />
+        <Route path="/course/:courseId" element={<CourseDetailPage />} />
       </Routes>
     </Layout>
   );
